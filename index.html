@@ -1,0 +1,104 @@
+<!Doctype html>
+<html lang="es-MX">
+<head>
+	<title>Formulario para colaboración</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Formulario para enviar una colaboración">
+	<meta name="author" content="Eduardo Yael, artd_kda@hotmail.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caudex&family=PT+Mono&display=swap" rel="stylesheet">
+	<style>
+		body{
+			width: 80%;
+			margin: 0% 10%;
+			color: #faebd7;
+			background-color: #212121;
+		}
+		h1{
+			font: normal 5em/1em 'Caudex', monospace;
+		}
+		div.formulario{
+			display: flex;
+			justify-content: space-around;
+			align-items: bottom;
+		}
+		div img{
+			width: 40%;
+		}
+		form{
+			display: flex;
+			flex-direction: column;
+		}
+		label{
+			width: 100%;
+			font: normal 1.6em/1.6em 'Pt Mono', monospace;
+			margin: 1% 0%;
+		}
+		input, select, textarea{
+			font: normal 1.2em/1.4em 'Caudex', serif;
+			width: 50%;
+			background-color: #f5f5f5;
+			padding: 1% 2%;
+		}
+		textarea{
+			width: 75%;
+			height: 200px;
+		}
+		#color{
+			width: 10%;
+			height: 5vh;
+		}
+		#enviar{
+			width: 75%;
+			margin: 2% 0%;
+		}
+	</style>
+</head>
+<body>
+<h1>Formulario para mandar una colaboración <span style="font-size: .8em;">📝&#xfe0e;</span></h1>
+<div class="formulario">
+	<img src="https://images.unsplash.com/photo-1515387784663-e2e29a23f69e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="" />
+	
+	<form>
+		<label for="nombre">¿Cuál es tu nombre?</label>
+		<input id="nombre"type="text"></input>
+		
+		<label for="pseudo">Elige un Pseudónimo:</label>
+		<input id="pseudo"type="text"></input>
+		
+		<label for="correo">Ingresa tu correo electrónico:</label>
+		<input id="correo"type="text"></input>
+		
+		<label for="QConvocatoria">¿Cómo te enteraste de esta convocatoria?</label>
+		<select id="QConvocatoria" name="QConvocatoria">
+			<option value="Facebook">Facebook</option>
+			<option value="Instagram">Instagram</option>
+			<option value="TikTok">Tik tok</option>
+			<option value="YouTube">YouTube</option>
+			<option value="Sitio web">Sitio web</option>
+		</select>
+		
+		<label for="QGenero">¿En qué categoría participas?</label>
+		<select id="QGenero" name="QGenero">
+			<option value="Narrativa">Narrativa</option>
+			<option value="Ensayo">Ensayo</option>
+			<option value="Poesía">Poesía</option>
+		</select>
+		
+		<label for="titulo">¿Cuál es el título de tu texto?</label>
+		<input id="titulo"type="text"></input>
+		
+		<label for="color">¿Cuál es tu color favorito:</label>
+		<input type="color" value="#f491b4" id="color">(Será para el fondo de texto)</input>
+		
+		<label for="cuerpo">Escribe tu texto:</label>
+		<textarea id="cuerpo" type="text"></textarea>
+		
+		<input id="enviar"type="submit"></input>	
+		
+	</form>
+</div>
+</body>
+</html>
